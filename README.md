@@ -52,7 +52,7 @@ pip install -r requirements.txt
 ```
 
 ### 3️⃣ Configure environment
-Create a .env file:
+Create a `.env` file:
 ```env
 # Kafka
 KAFKA_BOOTSTRAP=localhost:9092

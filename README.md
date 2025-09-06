@@ -1,8 +1,7 @@
 # Machine-Performance-Dashboard
 # IoT Machine Telemetry Pipeline (Kafka + MySQL + Grafana)
 
-A real-time data engineering project simulating IoT machine telemetry.  
-It ingests synthetic sensor data into **Kafka**, consumes it via a Python service, stores both latest & historical states in **MySQL**, and visualizes KPIs & alerts in **Grafana** dashboard.
+A real-time data engineering project simulating IoT machine telemetry. It ingests synthetic sensor data into **Kafka**, consumes it via a Python service, stores both latest & historical states in **MySQL**, and visualizes KPIs & alerts in **Grafana** dashboard.
 
 ---
 ## 📌 Architecture

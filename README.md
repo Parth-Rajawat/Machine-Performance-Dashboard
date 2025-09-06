@@ -37,7 +37,7 @@ It ingests synthetic sensor data into **Kafka**, consumes it via a Python servic
 - **Streaming**: Apache Kafka  
 - **Ingestion**: Python (kafka-python)  
 - **Storage**: MySQL  
-- **Dashboards**: Grafana, Streamlit  
+- **Dashboards**: Grafana
 - **Config**: python-dotenv  
 
 

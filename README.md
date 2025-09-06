@@ -50,3 +50,33 @@ A real-time data engineering project simulating IoT machine telemetry. It ingest
 ```bash
 pip install -r requirements.txt
 ```
+
+### 3️⃣ Configure environment
+Create a .env file:
+```env
+# Kafka
+KAFKA_BOOTSTRAP=localhost:9092
+TELEMETRY_TOPIC=machine_telemetry
+
+# MySQL
+MYSQL_HOST=localhost
+MYSQL_PORT=3306
+MYSQL_USER=root
+MYSQL_PASSWORD=your_password
+MYSQL_DB=iot_monitor
+
+# Producer
+NUM_MACHINES=50
+TICK_SECONDS=5.0
+
+# Consumer
+CONSUMER_GROUP=iot-mysql-writer
+
+# Streamlit
+STREAMLIT_REFRESH_SEC=3
+
+# Thresholds
+THRESHOLD_TEMPERATURE=85.0
+THRESHOLD_VIBRATION=1.5
+THRESHOLD_PERF_SCORE=0.5
+```

@@ -7,8 +7,6 @@ A real-time data engineering project simulating IoT machine telemetry. It ingest
 ## 📌 Architecture
 <img width="1297" height="389" alt="Architecture" src="https://github.com/user-attachments/assets/4d6306be-4b59-466c-a333-900b0d956409" />
 
-
-
 **Flow:**
 1. **Synthetic Data Generator (Producer)** → Publishes JSON telemetry (temperature, RPM, vibration, perf_score) for 50+ machines into Kafka (`machine_telemetry` topic).
 2. **Kafka Broker** → Manages topic partitions (keyed by `machine_id`).
@@ -37,7 +35,9 @@ A real-time data engineering project simulating IoT machine telemetry. It ingest
 - **Ingestion**: Python (kafka-python)  
 - **Storage**: MySQL  
 - **Dashboards**: Grafana
-- **Config**: python-dotenv  
+- **Config**: python-dotenv
+
+---  
 
 ## ⚙️ Setup & Run
 
@@ -72,9 +72,6 @@ TICK_SECONDS=5.0
 # Consumer
 CONSUMER_GROUP=iot-mysql-writer
 
-# Streamlit
-STREAMLIT_REFRESH_SEC=3
-
 # Thresholds
 THRESHOLD_TEMPERATURE=85.0
 THRESHOLD_VIBRATION=1.5
@@ -85,3 +82,13 @@ THRESHOLD_PERF_SCORE=0.5
 ```
 mysql -u root -p < database_setup.sql
 ```
+
+### 5️⃣ Run components
+```bash
+# Start Kafka consumer → MySQL
+python kafka_to_mysql_iot.py
+
+# Start Kafka producer (synthetic telemetry)
+python machine_producer.py
+```
+

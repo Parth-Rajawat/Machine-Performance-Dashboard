@@ -80,3 +80,8 @@ THRESHOLD_TEMPERATURE=85.0
 THRESHOLD_VIBRATION=1.5
 THRESHOLD_PERF_SCORE=0.5
 ```
+
+### 4️⃣ Initialize database
+```
+mysql -u root -p < database_setup.sql
+```

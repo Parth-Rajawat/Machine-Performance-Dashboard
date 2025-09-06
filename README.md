@@ -91,4 +91,8 @@ python kafka_to_mysql_iot.py
 # Start Kafka producer (synthetic telemetry)
 python machine_producer.py
 ```
+### 6️⃣ Grafana setup
 
+- Add MySQL datasource pointing to iot_monitor
+- Import dashboard JSON (provided in repo)
+- Explore live machine metrics & alerts

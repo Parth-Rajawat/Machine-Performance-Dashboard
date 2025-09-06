@@ -39,4 +39,14 @@ A real-time data engineering project simulating IoT machine telemetry. It ingest
 - **Dashboards**: Grafana
 - **Config**: python-dotenv  
 
+## ⚙️ Setup & Run
 
+### 1️⃣ Prerequisites
+- Python 3.8+
+- MySQL running (with `iot_monitor` DB)
+- Kafka broker running (on `localhost:9092`)
+
+### 2️⃣ Install dependencies
+```bash
+pip install -r requirements.txt
+```

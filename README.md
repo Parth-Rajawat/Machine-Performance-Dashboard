@@ -2,7 +2,7 @@
 # IoT Machine Telemetry Pipeline (Kafka + MySQL + Grafana)
 
 A real-time data engineering project simulating IoT machine telemetry.  
-It ingests synthetic sensor data into **Kafka**, consumes it via a Python service, stores both latest & historical states in **MySQL**, and visualizes KPIs & alerts in **Grafana/Streamlit** dashboards.
+It ingests synthetic sensor data into **Kafka**, consumes it via a Python service, stores both latest & historical states in **MySQL**, and visualizes KPIs & alerts in **Grafana** dashboard.
 
 ---
 ## 📌 Architecture
@@ -28,7 +28,6 @@ It ingests synthetic sensor data into **Kafka**, consumes it via a Python servic
 - **Threshold-based alerts** (temp > 85°C, vibration > 1.5g, perf < 0.5)
 - **MySQL schema** optimized for both snapshot and historical queries
 - **Grafana dashboard** for industry-standard monitoring (sub-5s latency)
-- **Streamlit dashboard** for custom interactive analysis
 - **.env config** for portability (Kafka, MySQL, refresh rate, thresholds)
 
 ---
@@ -41,7 +40,4 @@ It ingests synthetic sensor data into **Kafka**, consumes it via a Python servic
 - **Dashboards**: Grafana, Streamlit  
 - **Config**: python-dotenv  
 
----
-
-## 📂 Project Structure
 
